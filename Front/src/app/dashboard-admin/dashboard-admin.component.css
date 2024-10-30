@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Alinea los elementos al principio y al final del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.divLogo {
+    background-color: #006633;
+    height: 60px;
+    padding: 0px 10px;
+    float: left;
+}
+
+.divLogo img {
+    max-width: 80px;
+}
+
+mat-toolbar .btn-menu .divLogo{
+    display: none;
+} 
+mat-toolbar .btn-menu.btn-menu-open .divLogo{
+    display: block;
+} 
+
+@media (max-width: 767px){
+    
+
+    mat-toolbar .btn-menu {
+        width: 60px;
+    }
+
+    mat-toolbar .btn-menu.btn-menu-open {
+        width: 100%;
+    }
+}

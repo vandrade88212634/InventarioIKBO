@@ -1,0 +1,12 @@
+.mat-mdc-form-field.search-field {
+  width: 262px !important;
+  height: 40px !important;
+}
+
+.mat-mdc-text-field-wrapper {
+  height: 40px !important;
+}
+
+.mdc-notched-outline__notch {
+  height: 40px !important;
+}

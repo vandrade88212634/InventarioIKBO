@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ideam-sirlab-solicitud-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ideam-sirlab-solicitud-api
+  template:
+    metadata:
+      labels:
+        app: ideam-sirlab-solicitud-api
+    spec:
+      containers:
+      - name: ideam-sirlab-solicitud-api
+        image: $(ACRContainerId)/solicitud-api:$(Build.BuildId)
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80

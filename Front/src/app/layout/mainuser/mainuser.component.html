@@ -1,0 +1,104 @@
+<!-- Menu notificaciones  -->
+<div class="toolbar-items">
+    <div class="toolbar-item">
+        <!-- <button class="floatleft" mat-icon-button matTooltip="Notifications" [matMenuTriggerFor]="notificationMenu">
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <mat-menu #notificationMenu [overlapTrigger]="false" yPosition="below">
+
+            <label class="btnClosetooltip"
+                (click)="preventTooltipClose($event, false)"><mat-icon>close</mat-icon></label>
+            <div (click)="preventTooltipClose($event, true)">
+                <label class="textDest">Notificaciones</label>
+                <mat-tab-group>
+                    <mat-tab label="Todas">
+                        <mat-list role="list">
+                            <mat-list-item *ngFor="let notification of notificaciones" role="listitem"
+                                (click)="viewNotification(notification)"
+                                [class]="notification.tipoNotificacion === 'Alerta'? 'AlertList' : 'SoliList'">
+                                <mat-icon matListItemIcon
+                                    *ngIf="notification.tipoNotificacion === 'Alerta'">add_alert</mat-icon>
+                                <mat-icon matListItemIcon
+                                    *ngIf="notification.tipoNotificacion === 'Solicitud'">list</mat-icon>
+                                <span matListItemTitle>{{ notification.titulo }}</span>
+                                <span matListItemLine>{{ notification.descripcion }}</span>
+                                <span matListItemLine>hace: {{ notification.ago }} </span>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-tab>
+
+                    <mat-tab label="Mensajes">
+                        <mat-list role="list">
+                            <mat-list-item *ngFor="let notification of notificaciones" role="listitem" class="SoliList"
+                                (click)="viewNotification(notification)">
+                                <mat-icon matListItemIcon>list</mat-icon>
+                                <span matListItemTitle>{{ notification.titulo }}</span>
+                                <span matListItemLine>{{ notification.descripcion }}</span>
+                                <span matListItemLine>hace: {{ notification.ago }} </span>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-tab>
+
+                    <mat-tab label="Alertas">
+                        <mat-list role="list">
+                            <mat-list-item *ngFor="let notification of notificaciones" role="listitem" class="AlertList"
+                                (click)="viewNotification(notification)">
+                                <mat-icon matListItemIcon>add_alert</mat-icon>
+                                <span matListItemTitle>{{ notification.titulo }}</span>
+                                <span matListItemLine>{{ notification.descripcion }}</span>
+                                <span matListItemLine>hace: {{ notification.ago }} </span>
+                            </mat-list-item>
+                        </mat-list>
+                    </mat-tab>
+                </mat-tab-group>
+
+                <mat-divider></mat-divider>
+                <button mat-menu-item routerLink="#">
+                    <mat-icon>exit_to_app</mat-icon>Logout
+                </button>
+            </div>
+        </mat-menu> -->
+        <!--
+
+Menu Usuario
+
+ -->
+        <button style="padding-top: 0px;" class="btnTooltipUser" mat-icon-button matTooltip="My Account"
+            [matMenuTriggerFor]="userAccountMenu">
+            <span style="color: #fff;" class="name">{{ nombre | slice:0:1 }}</span>
+            <mat-icon matTooltip="My Account" style="padding-top: 4px; margin-left: 6px !important; color: #141414;">keyboard_arrow_down</mat-icon> 
+        </button>
+        <mat-menu #userAccountMenu [overlapTrigger]="false" yPosition="below">
+            <button mat-menu-item class="onlyMovil">
+                <mat-icon>person</mat-icon>
+                <span>Cindy Herrera Ayola<br>
+                <span style="font-size: 0.7rem; padding-left: 38px;">Regional Magdalena</span></span>
+            </button> 
+
+
+            
+            <!--<button mat-menu-item routerLink="#"> this.isDasboard
+        <mat-icon>settings</mat-icon><span>Settings</span>
+    </button> -->
+            <!--  <button mat-menu-item routerLink="/admin" *ngIf="1==1">
+                <mat-icon>settings</mat-icon><span>Administrar</span>
+            </button> -->
+
+            <mat-divider class="onlyMovil"></mat-divider>
+            <button mat-menu-item (click)="logout()">
+                <mat-icon>exit_to_app</mat-icon>Salir
+            </button>
+        </mat-menu>
+    </div>
+</div>
+
+
+<ng-template #edit>
+    <div class="contend">
+        <h1> {{notifiSelect.titulo}} </h1>
+        <h3> {{notifiSelect.descripcion}} </h3>
+        <h5> Hace: {{notifiSelect.ago}} </h5>
+
+        <button mat-button mat-dialog-close>Cerrar</button>
+    </div>
+</ng-template>

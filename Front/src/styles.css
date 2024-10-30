@@ -1,0 +1,582 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'LibreFranklin-Italic';
+    src: url('./assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreFranklin-VariableFont';
+    src: url('./assets/fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreFranklin-Regular';
+    src: url('./assets/fonts/static/LibreFranklin-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreFranklin-SemiBold';
+    src: url('./assets/fonts/static/LibreFranklin-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LibreFranklin-Medium';
+    src: url('./assets/fonts/static/LibreFranklin-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/static/Lato-Regular.ttf') format('truetype');
+}
+
+
+:root {
+    --verde-1: #006633;
+    --verde-2: #007533;
+    --verde-3: #39A935;
+    --verde-4: #99CC33;
+    --verde-fondo: #005E29;
+    --gris-oscuro: #666666;
+    --gris-clar: #ccc;
+    --azul-btn: #007bff;
+}
+
+.slideInOut {
+    animation: slideInOut 0.5s ease-out;
+}
+
+.mat-drawer {
+    width: 30vw;
+}
+
+mat-toolbar .btn-menu {
+    position: inherit;
+    background-color: var(--verde-1);
+    height: 60px;
+    width: 60px;
+    padding-right: 7px;
+    padding-top: 5px;
+    transition: width 0.5s ease-out, height 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.mat-drawer.mat-sidenav {
+    transition: width 2s ease-in-out; 
+  }
+  
+  .mat-sidenav.mat-drawer-closed {
+    width: 0 !important;
+  }
+
+mat-toolbar .logo {
+    max-width: 50px;
+    padding: 0 10px;
+}
+
+mat-toolbar .btn-menu.btn-menu-open {
+    width: 20%;
+    min-width: 60px;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translateX(0);
+}
+
+mat-toolbar .nameUser {
+    margin-right: 50px;
+    margin-left: -40px;
+    line-height: 1;
+    font-size: 11px;
+
+}
+
+mat-toolbar .nameUser .titleName {
+    font-size: 14px;
+}
+
+.mat-toolbar-single-row {
+    padding: 0 !important;
+    height: 58px !important;
+}
+
+.mat-drawer.mat-drawer-side {
+    width: 20%;
+    padding: 10px;
+}
+
+.mat-drawer-content {
+    overflow: hidden !important;
+}
+
+.mat-toolbar {
+    background-color: #fff !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.toolbar-item .btnTooltipUser {
+    background-color: #31ac5a;
+    padding: 2px 12px 2px 14px;
+    height: 40px;
+    width: 40px;
+    margin-right: 26px;
+}
+
+.container {
+    padding: 50px;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    max-width: 97% !important;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 30px);
+    border: 1px solid #ebe8e8;
+}
+
+.input-full-width,
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+.title {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 20px !important;
+}
+
+.subtitle {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.title-login {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    color: var(--verde-1);
+}
+
+.title-modal {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--verde-1);
+}
+
+.subtitle-modal {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--verde-1);
+}
+
+.alnLeft {
+    text-align: left;
+}
+
+.alnRight {
+    text-align: right;
+}
+
+.alnBottom {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.hint {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+table {
+    width: 100%;
+    overflow-x: auto !important;
+}
+
+table td button {
+    width: 90px !important;
+}
+
+mat-month-view .mat-calendar-body-cell-content {
+    width: 40% !important;
+}
+
+mat-paginator {
+    margin-top: 15px !important;
+}
+
+
+.mat-calendar-body-cell-content {
+    width: 40% !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    color: #000 !important;
+}
+
+.th {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.td {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.btn-filter {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    /* Alinea verticalmente el contenido */
+}
+
+.btn-content mat-icon {
+    margin-right: 5px;
+    /* Ajusta el espacio entre el icono y el texto */
+}
+
+.alineadoDerecha {
+    float: right;
+    margin-right: 3%;
+    display: table;
+    height: 100px;
+    margin-left: auto;
+    /* Empuja este elemento hacia la derecha */
+}
+
+.custom-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-forgot {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.respass {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: green;
+    text-decoration: underline;
+}
+
+.material-input input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.material-input input:focus {
+    border-bottom-color: var(--azul-btn);
+}
+
+.material-input label {
+    color: #999;
+}
+
+.material-input label.active {
+    color: var(--azul-btn);
+}
+
+.banner {
+    background-image: url(./assets/img/banner2.jpg);
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* modal */
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    border-radius: 31px !important;
+}
+
+/* fin modal */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    color: #1D1B20;
+}
+
+.btnMenuNav {
+    border: 0px !important;
+    float: right;
+}
+
+.btnMenuNav mat-icon {
+    color: #fff;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 0px);
+}
+
+/* nav bar  */
+.mat-toolbar .header {
+    margin: 50px;
+    background-color: #fff !important;
+}
+
+.mat-drawer.mat-drawer-side {
+    background-color: var(--verde-1);
+}
+
+
+mat-sidenav .listSubmenu {
+    background-color: var(--verde-fondo) !important;
+    margin: -8px 14px 11px 10px;
+    padding: 20px 5px;
+    border-radius: 0 0 15px 15px;
+}
+
+mat-sidenav .itemMenu {
+    background-color: var(--verde-2);
+    border-radius: 10px;
+    margin: 10px 5px 0;
+    width: 95%;
+}
+
+mat-sidenav .itemNamemenu {
+    position: absolute;
+    margin: 0 13px;
+    margin-top: 1px;
+}
+
+mat-sidenav .itemNamemenu2 {
+    position: absolute;
+    margin: 0 13px;
+    margin-top: -5px;
+}
+
+mat-sidenav .itemNamemenu2 mat-icon {
+    padding-top: 7px;
+}
+
+mat-sidenav .mdc-list-item:focus,
+mat-sidenav .mdc-list-item:active {
+    outline: none;
+    background-color: var(--verde-3) !important;
+    border-radius: 15px;
+}
+
+mat-sidenav .mdc-list-item__primary-text,
+.itemMenu {
+    color: #fff !important;
+    font-size: 1.1em !important;
+}
+
+.accordion-menu {
+    position: relative;
+}
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content.expanded {
+    display: block;
+}
+
+.list-container {
+    width: 622.5px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    /* Alinea los títulos a los extremos */
+    padding: 10px;
+    border: 1px solid #F1F1F1;
+    background-color: #F1F1F1;
+}
+
+.list-item-desc {
+    display: flex;
+    justify-content: space-between;
+    /* Alinea los títulos a los extremos */
+    padding: 10px;
+    border: 1px solid #F1F1F1;
+}
+
+.title-left {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    /* Alinea el título a la izquierda */
+}
+
+.title-right {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    /* Alinea el título a la derecha */
+}
+
+.list-label {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    font-style: italic;
+}
+
+.fc-button-primary {
+    background-color: #39A935 !important;
+    /* Cambia el color de fondo del botón primario */
+    border-color: #39A935 !important;
+    /* Cambia el color del borde del botón primario */
+    color: #fff !important;
+    /* Cambia el color del texto del botón primario */
+}
+
+.fc-button-primary:hover {
+    background-color: #2E8132 !important;
+    /* Cambia el color de fondo del botón primario al pasar el ratón sobre él */
+    border-color: #2E8132 !important;
+    /* Cambia el color del borde del botón primario al pasar el ratón sobre él */
+}
+
+.mat-mdc-form-field-error-wrapper{
+    position: relative !important;
+    display: initial !important;
+}
+
+
+@keyframes slideInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos por defecto para dispositivos móviles */
+#desktop-actions {
+    display: table-cell;
+}
+
+#mobile-actions {
+    display: none;
+    /* Por defecto, ocultar en dispositivos móviles */
+}
+
+.hover:hover {
+    background-color: #E9F0F9;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Media Query para pantallas con un ancho máximo de 767px (tamaño típico de dispositivos móviles) */
+@media (max-width: 767px) {
+    .onlyMovil {
+        display: block;
+    }
+
+    #desktop-actions {
+        display: none;
+        /* Ocultar en dispositivos móviles */
+    }
+
+    #mobile-actions {
+        display: table-cell;
+        /* Mostrar en dispositivos móviles */
+    }
+
+    mat-toolbar .btn-menu.btn-menu-open {
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .mat-drawer.mat-drawer-side {
+        width: 100%;
+    }
+
+    .mat-toolbar .alineadoIzquierda.nameUser {
+        display: none;
+    }
+
+    .fc-header-toolbar {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a columna */
+        align-items: center;
+        /* Centra los elementos horizontalmente */
+    }
+
+    .fc-header-toolbar .fc-left,
+    .fc-header-toolbar .fc-center,
+    .fc-header-toolbar .fc-right {
+        width: 100%;
+        /* Ajusta el ancho de los controles a 100% */
+        margin-bottom: 10px;
+        /* Añade espacio entre los controles */
+    }
+}

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetDataTransferFrozenNational" xml:space="preserve">
+    <value>[Payment].[spGetDataTransferFrozenNational]</value>
+  </data>
+  <data name="GetLastDateDebtors" xml:space="preserve">
+    <value>[Conciliation].[spSearhExpirationDate]</value>
+  </data>
+  <data name="GetQueryDataGrid" xml:space="preserve">
+    <value>SELECT [l].[idtipoLista],[w].[WarrantyGarId] AS [warrantyId], [dw].[WarrantyDetailGarId] AS [warrantyDetailId], [w].[WarrantyCode], [w].[WarrantyNumber], [w].[WarrantyType], [w].[Currency], [w].[Amount], [w].[Balance], [w].[Applied], [b].[bancoID] AS [financialEntityId], [b].[codigoBanco] AS [financialEntityCode], [b].[nombreBanco] AS [financialEntityName], [c].[empresaID] AS [companyId], [c].[codigo] AS [companyCode], [c].[nombre] AS [companyName], [c].[nombreCorto] AS [companyShortName], COALESCE(([c].[nombreCorto] + ' - ') + [a].[Agent], N'') AS [companyAgent], COALESCE(([c].[codigo] + ' - ') + [a].[Agent], N'') AS [companyAgentId], [w].[InitialWarrantyDate], [w].[FinalWarrantyDate], [dw].[AdmissionDate], [vbw].[FinalDate] AS [validFinalDate], [l].[codigo] AS [status],[a].[Agent],[l].[nombre] as statusname
+FROM [Warranty].[WarrantiesGar] AS [w]
+inner JOIN [Warranty].[WarrantyDetailGar] AS [dw] ON [w].[WarrantyGarId] = [dw].[WarrantyGarId]
+inner JOIN [Warranty].[BankWarrantyGar] AS [bw] ON [w].[WarrantyGarId] = [bw].[WarrantyGarId]
+inner JOIN [banco].[Banco] AS [b] ON [bw].[FinancialEntity] = [b].[codigoBanco]
+inner JOIN [agente].[Empresa] AS [c] ON [bw].[Company] = [c].[codigo]
+inner JOIN [Warranty].[ValidBankWarrantyGar] AS [vbw] ON [dw].[WarrantyDetailGarId] = [vbw].[WarrantyDetailGarId]
+inner JOIN [Warranty].[WarrantyAgentGar] AS [a] ON [dw].[WarrantyDetailGarId] = [a].[WarrantyDetailGarId]
+inner JOIN [Warranty].[WarrantyTrackingGar] AS [t] ON [dw].[WarrantyDetailGarId] = [t].[WarrantyDetailGarId]
+inner JOIN [Warranty].[WarrantyDetailApplicationGar] AS [dap] ON [dw].[WarrantyGarId] = [dap].[WarrantyGarId]
+inner JOIN [transversal].[Lista] AS [l] ON [dap].[StatusCode] = [l].[codigo] {0} AND [l].[idtipolista] = 97
+group by [l].[idtipolista],[w].[WarrantyGarId], [dw].[WarrantyDetailGarId], [w].[WarrantyCode], [w].[WarrantyNumber], [w].[WarrantyType], [w].[Currency], [w].[Amount], [w].[Balance], [w].[Applied], [b].[bancoID] , [b].[codigoBanco] , [b].[nombreBanco] , [c].[empresaID] , [c].[codigo] , [c].[nombre] , [c].[nombreCorto] , COALESCE(([c].[nombreCorto] + ' - ') + [a].[Agent], N'') , COALESCE(([c].[codigo] + ' - ') + [a].[Agent], N'') , [w].[InitialWarrantyDate], [w].[FinalWarrantyDate], [dw].[AdmissionDate], [vbw].[FinalDate], [l].[codigo],[a].[Agent] ,[l].[nombre]
+ORDER BY [w].[WarrantyNumber] DESC</value>
+  </data>
+  <data name="ImportsExportsExpirationTransfer" xml:space="preserve">
+    <value>select Business, TypeData, DateExpiration, CompanyId from load.ImportsExportsExpirationTransfer IEET
+where IEET.Business = '{0}' and IEET.TypeData = {1} and IEET.DateExpiration = '{2}' and IEET.CompanyId = {3}</value>
+  </data>
+  <data name="InvoiceDebtorsInformation" xml:space="preserve">
+    <value>SELECT [w].[WarrantyNumber], [c].[nombreCorto] AS [companyShortName], sp.ExpirationDate, b.nombreBanco as BankName, sp.TotalDebt as ValueDebt, CAST(CAST(w.Amount AS NUMERIC) AS FLOAT) as Amount, FORMAT(w.FinalWarrantyDate, 'yyyy-MM-yy') as Validity
+FROM [Warranty].[WarrantiesGar] AS [w]
+inner JOIN [Warranty].[WarrantyDetailGar] AS [dw] ON [w].[WarrantyGarId] = [dw].[WarrantyGarId]
+inner JOIN [Warranty].[BankWarrantyGar] AS [bw] ON [w].[WarrantyGarId] = [bw].[WarrantyGarId]
+inner JOIN [banco].[Banco] AS [b] ON [bw].[FinancialEntity] = [b].[codigoBanco]
+inner JOIN [agente].[Empresa] AS [c] ON [bw].[Company] = [c].[codigo]
+inner JOIN [Warranty].[ValidBankWarrantyGar] AS [vbw] ON [dw].[WarrantyDetailGarId] = [vbw].[WarrantyDetailGarId]
+inner JOIN [Warranty].[WarrantyAgentGar] AS [a] ON [dw].[WarrantyDetailGarId] = [a].[WarrantyDetailGarId]
+inner join [Payment].[SupplyLimitation] sp on a.Agent= sp.AgentCode
+inner JOIN [Warranty].[WarrantyTrackingGar] AS [t] ON [dw].[WarrantyDetailGarId] = [t].[WarrantyDetailGarId]
+inner JOIN [Warranty].[WarrantyDetailApplicationGar] AS [dap] ON [dw].[WarrantyGarId] = [dap].[WarrantyGarId]
+inner JOIN [transversal].[Lista] AS [l] ON [dap].[StatusCode] = [l].[codigo]
+where l.idTipoLista = 97 and StatusCode = 1 and sp.ExpirationDate = '{0}'
+group by [w].[WarrantyNumber], [c].[nombreCorto], sp.ExpirationDate, b.nombreBanco, sp.TotalDebt, w.Amount, w.FinalWarrantyDate
+ORDER BY [w].[WarrantyNumber] DESC</value>
+  </data>
+  <data name="QueryBank" xml:space="preserve">
+    <value>select b.[bancoID] FROM [banco].[CuentaBancaria] ba inner join [banco].[Banco] b on ba.[entidadBancariaId] = b.[bancoID] where ba.[cuentaBancariaID] = {0}</value>
+  </data>
+  <data name="QueryCompany" xml:space="preserve">
+    <value>SELECT	[E].[empresaID] AS [CompanyId], 
+		[E].[nit] AS [Nit], 
+		[E].[nombre] AS [CompanyName], 
+		[E].[fechaCreacion] AS [CreationDate], 
+		[E].[fechaModificacion] AS [ModificationDate], 
+		[E].[idUsuarioCrea] AS [CreationUser], 
+		[E].[idUsuarioActualiza] AS [ModificationUser], 
+		[E].[codigo] AS [CompanyCode], 
+		[E].[nombreCorto]  AS [ShortName]
+FROM [agente].[Empresa] E
+WHERE [E].[codigo] = {0}</value>
+  </data>
+  <data name="SqlCloseNationalGridOne" xml:space="preserve">
+    <value>select tot.AgentCode,tot.companyShortname,tot.period,sum(tot.BankingCOP) as BankingCOP,sum(tot.Expiration) as Expiration,
+                                                            sum(tot.PrepaidValue) as PrepaidValue, sum(0) as Balance from (
+                                                            select ed.AgentCode, c.nombreCorto as companyShortName,ed.expirationDetailGarId,
+                                                            (select sum(wp.ValueFrozenApplied - wp.ValueReturnsApplied)  from  warranty.WarrantyPaymentAppliedGar  as wp
+                                                            inner join load.LoadExpirationDetailgar led on wp.ExpirationDetailGarId = led.ExpirationDetailGarId
+                                                           where  wp.expirationdetailGarid = ed.ExpirationDetailGarId  and led.InvoiceExpirationDate = @expirationDate)
+                                                             as BankingCOP,sum(ed.ValueRequested) as Expiration ,
+                                                            Sum(ed.FrozenValue) as PrepaidValue,@period as period from load.LoadExpirationDetailgar ed
+                                                            inner join load.loadexpirationgar e on ed.expirationGarId = e.expirationGarId
+                                                            inner join agente.agente a on ed.AgentCode =a.codigoAgente
+                                                                 join agente.empresa c on a.empresaid = c.empresaID
+                                                                 where ed.InvoiceExpirationDate = @expirationDate ANd e.Scheme NOT IN('TIES','TIESEXTRA') and dbo.FnValidateSchemaAgent(e.Scheme,a.agenteID,e.ExpirationDate)='S' and MONTH(ed.DateStart) =@Month and YEAR(ed.DateStart) =@Year  AND ed.ValueRequested &lt;&gt; 0 group by ed.AgentCode, c.nombreCorto,ed.expirationDetailGarId) as tot group by  tot.AgentCode,tot.companyShortName,tot.period</value>
+  </data>
+  <data name="SqlCloseNationalGridTwo" xml:space="preserve">
+    <value>select tot.AgentCode,tot.companyShortname,tot.expirationdate,sum(tot.OutStandingBalance) as OutStandingBalance from (
+															select ed.AgentCode, c.nombreCorto as companyShortName,ed.InvoiceExpirationDate as expirationdate,
+															sum(ed.ValuePending) as OutStandingBalance ,
+															Sum(ed.FrozenValue) as PrepaidValue,@Period as period from load.LoadExpirationDetailgar ed  
+															inner join load.loadexpirationgar e on ed.expirationGarId = e.expirationGarId
+															inner join agente.agente a on ed.AgentCode =a.codigoAgente
+																 join agente.empresa c on a.empresaid = c.empresaID
+																 where ed.InvoiceExpirationDate =@ExpirationDate ANd e.Scheme NOT IN('TIES','TIESEXTRA') and dbo.FnValidateSchemaAgent(e.Scheme,a.agenteID,e.ExpirationDate)='S' and MONTH(ed.DateStart) =@Month and YEAR(ed.DateStart) =@Year AND ed.ValueRequested &lt;&gt; 0 and ed.ValuePending &lt;&gt; 0  group by ed.AgentCode, c.nombreCorto,ed.InvoiceExpirationDate) as tot group by   tot.AgentCode,tot.companyShortname,tot.expirationdate</value>
+  </data>
+  <data name="ValidateAgentSchema" xml:space="preserve">
+    <value>[Schema].[ValidateSchemaAgent]</value>
+  </data>
+</root>

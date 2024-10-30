@@ -1,0 +1,48 @@
+.btnClosetooltip {
+    float: right;
+}
+
+.name {
+    padding-top: 0px;
+}
+
+mat-list-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.AlertList {
+    background-color: #eed1d3;
+}
+
+.SoliList {
+    background-color: #d7dff0;
+}
+
+.cdk-overlay-pane {
+    position: absolute !important;
+    top: -160px !important;
+}
+
+.toolbar-items {
+    display: flex;
+}
+
+.toolbar-item {
+    margin-right: 1%;
+    padding-top: 30px;
+}
+
+.toolbar-item  img {
+    border-radius: 50%;
+}
+
+
+.onlyMovil {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .onlyMovil {
+        display: block;
+    }
+}

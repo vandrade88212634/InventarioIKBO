@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ideam-sirlab-solicitud-api
+spec:
+  selector:
+    app: ideam-sirlab-solicitud-api
+  ports:
+  - port: 80
+  type: ClusterIP

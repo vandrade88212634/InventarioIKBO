@@ -1,0 +1,13 @@
+<div class="mat-dialog medium">
+    <mat-icon > add_alert </mat-icon>
+    <h1 mat-dialog-title>{{ data.title }}</h1>
+    <div mat-dialog-content style=" padding: 30px; overflow-x: auto; max-height: calc(80vh);">
+        <ng-container>
+            <p> {{data.message}} </p>
+            <div class="mt-5 alnRight">
+                <button mat-button style="color:#006633;" (click)="closeDialog(true)">Aceptar</button>
+                <button mat-button color="warn" (click)="closeDialog(false)">Cancelar</button>
+            </div>
+        </ng-container>
+    </div>
+</div>

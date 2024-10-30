@@ -1,0 +1,103 @@
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 mb-3">
+                    <p class="title">Producto</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row align-items-center">
+               
+                <div class="col-md-4 mb-3" >
+                    <button style="height: 55px; margin-top: -23px;" type="button"
+                        class="btn btn-outline-success text-btn" (click)="clickAddEdit('add',0)">+ Crear
+                        nuevo Producto</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="col-md-4">
+            <div class="row align-items-center">
+                   
+                <div class="col-md-4 mb-3" >
+                    <button style="height: 55px; margin-top: -23px;" type="button"
+                        class="btn btn-outline-success text-btn" (click)="salir()">Salir</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+  
+<!--Add-->
+<ng-template #add>
+    <form [formGroup]="addEditForm" (ngSubmit)="addOreditTarea()" style="margin-top: -5%;">
+        <div class="row">
+            <div class="col-md-12 alnLeft">
+                <p class="title-modal"><mat-icon
+                        style="vertical-align: middle; margin-right: 5px;">person</mat-icon>{{textAddEdit}}</p>
+            </div>
+        </div>
+       
+       
+                <div >
+                     
+                     <mat-form-field >
+                         <mat-label>Nombre</mat-label>
+                         <input matInput placeholder="Nombre" formControlName="Nombre" >
+                         <mat-error *ngIf="addEditForm.get('Nombre')?.hasError('required')">Campo requerido</mat-error>
+                        
+                     </mat-form-field>
+                    
+                 </div>
+
+            <mat-divider></mat-divider>
+      
+           
+     
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <button mat-button style="color:#006633;" type="submit" [disabled]="!addEditForm.valid">Guardar</button>
+                <button mat-button color="warn" type="button" (click)="confirmClosemodal()">Cancelar</button>
+            </div>
+        </div>
+    </form>
+</ng-template>
+<!--/Add-->
+<!--AddBtn-->
+<ng-template #addBtn>
+    <p class="text-forgot">El producto ha sido creado con éxito</p>
+    <div class="modal-footer">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <button mat-button style="color:#006633;" (click)="confirmClosemodal()">Aceptar</button>
+        </div>
+    </div>
+</ng-template>
+<!--/AddBtn-->
+<!--Edit-->
+<!--Cancel-->
+<ng-template #cancel>
+    <p class="text-forgot">Si acepta, el registro no se creará ni guardará.</p>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <button mat-button style="color:#006633;" (click)="confirmClosemodal()">Aceptar</button>
+            <button mat-button color="warn" (click)="confirmClosemodal()">Cancelar</button>
+        </div>
+    </div>
+</ng-template>
+<!--/Cancel-->
+<!--Ver-->
+<!--/ver-->
+<!--Block-->
+
+<!--/Block-->
+<!--UnBlock-->
+
+<!--/UnBlock-->
+<!--Acciones-->
+

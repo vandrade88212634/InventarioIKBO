@@ -1,0 +1,81 @@
+<mat-toolbar class="header">
+    <!-- Logo -->
+    
+
+    <!-- Botón de menú -->
+    <div [ngClass]="getMenuButtonClass()">
+        
+        <div class="divLogo">
+            <img src="../../assets/img/logocens.png" alt="">
+        </div>
+        <span (click)="toggleMenu()">
+            <button class="btnMenuNav" mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </span>
+    </div>
+
+    <img src="../../assets/img/planeador.png" alt="Logo" class="logo">
+    <h1>Inventario IKBO</h1>
+
+
+    <div class="alineadoDerecha">
+        <span class="toolbar-item-spacer"></span>
+        <app-mainuser></app-mainuser>
+    </div>
+
+    <div class="alineadoIzquierda nameUser">
+        <span class="titleName">Cindy Herrera Ayola</span> <br>
+            <span>Regional Magdalena</span>
+    </div>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened="false" class="sidenav">
+        <mat-nav-list>
+            <ng-container *ngFor="let item of menu['admin']; let i=index">
+                <ng-container *ngIf="item.subMenu; else noSubMenu">
+                    <!-- Si el elemento tiene submenú -->
+                    <a mat-list-item class="itemMenu" (click)="toggleSubMenu(i)">
+                        <mat-icon matPrefix>{{item.icon}}</mat-icon>
+                        <span class="itemNamemenu2">{{item.title}}
+                        <mat-icon matSuffix *ngIf="!isSubMenuOpen[i]">arrow_drop_down</mat-icon>
+                        <mat-icon matSuffix *ngIf="isSubMenuOpen[i]">arrow_drop_up</mat-icon></span>
+                    </a>
+                    <mat-nav-list *ngIf="isSubMenuOpen[i]" [ngClass]="{'slideInOut': isSubMenuOpen[i]}"
+                        class="listSubmenu">
+                        <!-- Submenú -->
+                        <span (click)="toggleMenu()">
+                        <a mat-list-item routerLinkActive="active-link" [routerLink]="subItem.path"
+                            *ngFor="let subItem of item.subMenu" (click)="sidenav.toggle()">
+                            <mat-icon>{{subItem.icon}}</mat-icon>
+                            <span class="itemNamemenu">{{subItem.title}}</span>
+                        </a></span>
+                    </mat-nav-list>
+                </ng-container>
+                <ng-template #noSubMenu>
+                    <!-- Si el elemento no tiene submenú -->
+                    <span (click)="toggleMenu()">
+                    <a class="itemMenu" mat-list-item routerLinkActive="active-link" [routerLink]="item.path" (click)="sidenav.toggle()">
+                        <mat-icon>{{item.icon}}</mat-icon>
+                        <span class="itemNamemenu">{{item.title}}</span>
+                    </a></span>
+                </ng-template>
+            </ng-container>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <div class="row contentMain">
+                <div>
+                    <div class="main">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

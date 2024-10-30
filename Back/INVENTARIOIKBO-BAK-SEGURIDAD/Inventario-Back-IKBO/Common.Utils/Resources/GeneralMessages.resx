@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ConceptNoFound" xml:space="preserve">
+    <value>Concepto no encontrado.</value>
+  </data>
+  <data name="CreateRecord" xml:space="preserve">
+    <value>Se almacenó el registro satisfactoriamente.</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Se eliminó el registro satisfactoriamente.</value>
+  </data>
+  <data name="Error500" xml:space="preserve">
+    <value>Ha ocurrido un error interno.</value>
+  </data>
+  <data name="ExpirationNotData" xml:space="preserve">
+    <value>No se encontraron registros para el vencimiento.</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>Operación fallida.</value>
+  </data>
+  <data name="SchemaAgentCreateValidationOldPeriod" xml:space="preserve">
+    <value>El periodo que intenta insertar es menor al último periodo abierto del agente.</value>
+  </data>
+  <data name="SchemaAgentCreateWarrantyExpiration" xml:space="preserve">
+    <value>No es posible registrar el esquema porque el agente ya tiene cargada una garantía para la vigencia ingresada.</value>
+  </data>
+  <data name="SchemaAgentEditValidation" xml:space="preserve">
+    <value>No es posible modificar el esquema porque ya tiene cargada una garantía para el periodo seleccionado.</value>
+  </data>
+  <data name="SchemaAgentEditValidationClosePeriod" xml:space="preserve">
+    <value>No es posible modificar el esquema porque el periodo seleccionado ya se encuentra cerrado.</value>
+  </data>
+  <data name="SchemaAgentFail" xml:space="preserve">
+    <value>No se pudo registrar el esquema.</value>
+  </data>
+  <data name="SchemaAgentRegistryExists" xml:space="preserve">
+    <value>El agente ya tiene registrado un esquema para este periodo.</value>
+  </data>
+  <data name="SchemaAgentSuccess" xml:space="preserve">
+    <value>Se ha registrado correctamente el esquema.</value>
+  </data>
+  <data name="SchemaAgentUpdateFail" xml:space="preserve">
+    <value>No se pudo actualizar esquema.</value>
+  </data>
+  <data name="SchemaAgentUpdateSuccess" xml:space="preserve">
+    <value>Se ha modificado correctamente el esquema.</value>
+  </data>
+  <data name="SchemaAgentUpdateWarrantyExpiration" xml:space="preserve">
+    <value>No es posible modificar el esquema porque el agente ya tiene cargada una garantía para la vigencia ingresada.</value>
+  </data>
+  <data name="ProcessBankCode" xml:space="preserve">
+    <value>{0} - Código: {1}</value>
+  </data>
+  <data name="ResultMulticashFileProcess" xml:space="preserve">
+    <value>{0} el archivo multicash para el banco {1} y el negocio {2}</value>
+  </data>
+  <data name="UpdateRecord" xml:space="preserve">
+    <value>Se actualizó el registro satisfactoriamente.</value>
+  </data>
+  <data name="ValidateBank" xml:space="preserve">
+    <value>No es posible actualizar la entidad bancaria, por favor valide los campos Código banco, Código ACH, Sector superintendencia.</value>
+  </data>
+  <data name="SchemaAgentDeleteError" xml:space="preserve">
+    <value>No se encuentran registro(s).</value>
+  </data>
+  <data name="SchemaAgentDeleteSuccess" xml:space="preserve">
+    <value>Se eliminó el registro para el esquema con Agente {0}-{1}, Esquema {2} y periodo {3}</value>
+  </data>
+  <data name="SchemaAgentHasLoad" xml:space="preserve">
+    <value>No se puede eliminar el registro para el esquema con Agente {0}-{1}, Esquema {2} y periodo {3} porque está asociado a un cálculo de garantía.</value>
+  </data>
+  <data name="SchemeAgentNotFound" xml:space="preserve">
+    <value>Agente no tiene asociado esquema para el período.</value>
+  </data>
+  <data name="AgentNotFound" xml:space="preserve">
+    <value>Agente no registrado.</value>
+  </data>
+  <data name="loadExirationDeleteError" xml:space="preserve">
+    <value>No es posible eliminar la carga de vencimiento.</value>
+  </data>
+  <data name="CantChargePay" xml:space="preserve">
+    <value>No se puede realizar la carga. Existe al menos un pago en esa fecha.</value>
+  </data>
+  <data name="ChargeOverWrite" xml:space="preserve">
+    <value>Carga existente, ¿Desea sobreescribir?.</value>
+  </data>
+  <data name="EmptyFile" xml:space="preserve">
+    <value>El archivo viene vacio.</value>
+  </data>
+  <data name="ValidateFileTiesExistsAgent" xml:space="preserve">
+    <value>El campo agente no corresponde a un agente existente.</value>
+  </data>
+  <data name="ValidateFileTiesIsDateExpirationDate" xml:space="preserve">
+    <value>El campo vencimiento no tiene el formato de fecha correcto (dd/MM/aaaa).</value>
+  </data>
+  <data name="ValidateFileTiesIsDateFinalDate" xml:space="preserve">
+    <value>El campo fecha final no tiene el formato de fecha correcto (dd/MM/aaaa).</value>
+  </data>
+  <data name="ValidateFileTiesIsDateInitialDate" xml:space="preserve">
+    <value>El campo fecha inicial no tiene el formato de fecha correcto (dd/MM/aaaa).</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyAgent" xml:space="preserve">
+    <value>El campo agente no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyConcept" xml:space="preserve">
+    <value>El campo concepto no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyExpirationDate" xml:space="preserve">
+    <value>El campo vencimiento no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyFinalDate" xml:space="preserve">
+    <value>El campo fecha final no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyInitialDate" xml:space="preserve">
+    <value>El campo fecha inicial no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyUploadType" xml:space="preserve">
+    <value>El campo tipo vencimiento no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsEmptyValue" xml:space="preserve">
+    <value>El campo valor no puede estar vacío.</value>
+  </data>
+  <data name="ValidateFileTiesIsTiesConcept" xml:space="preserve">
+    <value>El campo concepto no pertenece al tipo de archivo seleccionado.</value>
+  </data>
+  <data name="ValidateFileTiesIsTiesUploadType" xml:space="preserve">
+    <value>El campo tipo vencimiento no pertenece al tipo TIES.</value>
+  </data>
+  <data name="LoadFileMulticashSuccess" xml:space="preserve">
+    <value>Archivo cargado éxitosamente.</value>
+  </data>
+  <data name="AutomaticChargeTiesConfigData" xml:space="preserve">
+    <value>No se encontró configuración de datos para la fecha indicada.</value>
+  </data>
+  <data name="AutomaticChargeTiesFrecuency" xml:space="preserve">
+    <value>No se ha cumplido el tiempo de frecuencia establecido, intente mas tarde.</value>
+  </data>
+  <data name="AutomaticChargeTiesLoadRetry" xml:space="preserve">
+    <value>Superó el número máximo de intentos para ejecución de job.</value>
+  </data>
+  <data name="AutomaticChargeTiesRegisterExists" xml:space="preserve">
+    <value>Existe una carga para la fecha indicada.</value>
+  </data>
+  <data name="ERROR" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="NoRequstValue" xml:space="preserve">
+    <value>El registro no tiene Valor solicitado.</value>
+  </data>
+  <data name="NotBalance" xml:space="preserve">
+    <value>No hay saldo disponible suficiente en la cuenta custodia para esta aplicacion.</value>
+  </data>
+  <data name="SussefullyProcess" xml:space="preserve">
+    <value>Proceso realizado exitosamente.</value>
+  </data>
+  <data name="ValidatePreClosePending" xml:space="preserve">
+    <value>Existen valores pendientes por aplicar. ¿Desea continuar?.</value>
+  </data>
+  <data name="ValidatePreClosePosBalance" xml:space="preserve">
+    <value>Existen valores en Saldo a Favor y Saldo a Favor Pendiente. ¿Desea continuar?.</value>
+  </data>
+  <data name="ProblemsClosed" xml:space="preserve">
+    <value>Se ha realizado el cierre TIE, los siguientes agentes  están en estado pendiente.</value>
+  </data>
+  <data name="ReturnStatusPendingError" xml:space="preserve">
+    <value>Las siguientes líneas ya tienen transacciones realizadas:</value>
+  </data>
+  <data name="ReturnStatusPendingErrorDate" xml:space="preserve">
+    <value>No se encontraron datos para la fecha.</value>
+  </data>
+  <data name="ReturnStatusPendingSuccessful" xml:space="preserve">
+    <value>Se ha devuelto el cierre con éxito.</value>
+  </data>
+  <data name="ApplicationExist" xml:space="preserve">
+    <value>No se puede crear una nueva solicitud porque en este momento se encuentra una en proceso para el mismo día.</value>
+  </data>
+  <data name="NotBalanceForApplication" xml:space="preserve">
+    <value>No hay saldo para la solicitud.</value>
+  </data>
+  <data name="readyPreclose" xml:space="preserve">
+    <value>El vencimiento ya está en estado Precierre Aprobado.</value>
+  </data>
+  <data name="NotDeleteStatus" xml:space="preserve">
+    <value>No se puede eliminar la solicitud por el estado en el que se encuentra.</value>
+  </data>
+  <data name="ValidateNoReadyApproveClose" xml:space="preserve">
+    <value>Este cierre no ha sido aprobado. No se puede devolver.</value>
+  </data>
+  <data name="ValidateReadyApproveClose" xml:space="preserve">
+    <value>Este cierre ya está aprobado solo. Se puede devolver.</value>
+  </data>
+  <data name="NotScheme" xml:space="preserve">
+    <value>El agente tiene configurado otro esquema. Agente:</value>
+  </data>
+  <data name="ValidateNotReadyAprovedPreClose" xml:space="preserve">
+    <value>El precierre no está aprobado. No se puede devolver.</value>
+  </data>
+  <data name="ValidateReadyAprovePreClose" xml:space="preserve">
+    <value>El precierre ya está aprobado. Solo se puede devolver.</value>
+  </data>
+  <data name="DenegadeAgent" xml:space="preserve">
+    <value>Su usario no tiene permiso para cambiar a solicitud a este estado.</value>
+  </data>
+  <data name="NotRemoveExpirationLoad" xml:space="preserve">
+    <value>No es posible eliminar la carga de vencimentos dado que existe por lo menos un registro de pago en estado aplicado.</value>
+  </data>
+  <data name="CalculateAmountZero" xml:space="preserve">
+    <value>Monto calculado no puede ser cero (0).</value>
+  </data>
+  <data name="BalanceDifferent" xml:space="preserve">
+    <value>El valor de la transferencia no concuerda con la sumatoria de la carga.</value>
+  </data>
+  <data name="ExistConciliation" xml:space="preserve">
+    <value>Ya existe una conciliación realizada en ese rango de fechas {0} - {1}. Presione Guardar nuevamente para remplazar la conciliación actual.</value>
+  </data>
+  <data name="NotificationDelivery" xml:space="preserve">
+    <value>Se envió la notificación éxitosamente.</value>
+  </data>
+  <data name="NotificationFailed" xml:space="preserve">
+    <value>Error al enviar notificación.</value>
+  </data>
+  <data name="FileGenerated" xml:space="preserve">
+    <value>Archivo {0} generado con éxito en la ruta {1}</value>
+  </data>
+  <data name="SentNotification" xml:space="preserve">
+    <value>Notificación enviada con éxito.</value>
+  </data>
+  <data name="RecordsErrorStored" xml:space="preserve">
+    <value>Los siguientes registros ya fueron almacenados previamente. Verifique la información.</value>
+  </data>
+  <data name="RecordsSuccessfullyStored" xml:space="preserve">
+    <value>Registros almacenados exitosamente.</value>
+  </data>
+  <data name="NotSendNotification" xml:space="preserve">
+    <value>Existen registros no almacenados, por lo tanto no es posible enviar la notificación.</value>
+  </data>
+  <data name="RecordNotDeleted" xml:space="preserve">
+    <value>No es posible eliminar el registro porque no se encuentra almacenado.</value>
+  </data>
+  <data name="RecordsDeletedSuccessfully" xml:space="preserve">
+    <value>Registro(s) eliminado(s) exitosamente.</value>
+  </data>
+  <data name="DeleteFileDataConciliationError" xml:space="preserve">
+    <value>No se encontró el movimiento para eliminar.</value>
+  </data>
+  <data name="UpdateFileDataConciliationError" xml:space="preserve">
+    <value>No se encontró el movimiento para editar.</value>
+  </data>
+  <data name="ValidateBankNotAvaible" xml:space="preserve">
+    <value>El banco seleccionado no puede ser utilizado para procesar la información.</value>
+  </data>
+  <data name="ValidateEqualAccountUploadBank" xml:space="preserve">
+    <value>El número de cuenta del adjunto no coincide con el ingresado en el formulario.</value>
+  </data>
+  <data name="ValidateSaveFailedUploadBank" xml:space="preserve">
+    <value>Hubo un inconveniente al guardar la informacion procesada.</value>
+  </data>
+  <data name="ValidateSaveSuccessUploadBank" xml:space="preserve">
+    <value>La información cargada se guardó correctamente.</value>
+  </data>
+  <data name="ValidDateCancellationSuppliesNotification" xml:space="preserve">
+    <value>La fecha de aplicaciíon de pago debe ser igual al dia en curso.</value>
+  </data>
+  <data name="ValidDataCancellationSuppliesNotification" xml:space="preserve">
+    <value>Desea actualizar la información almacenada para el fecha de aplicación seleccionada? Esto implica el borrado de la información almacenada previamente.</value>
+  </data>
+  <data name="ValidDateCancellationSuppliesNotificationNotFound" xml:space="preserve">
+    <value>No se encontraron datos relacionados.</value>
+  </data>
+  <data name="SuperiorMaturity" xml:space="preserve">
+    <value>No es posible eliminar el/los registro(s) porque existe un vencimiento superior al actual.</value>
+  </data>
+  <data name="ValidateWarrantyValidity" xml:space="preserve">
+    <value>La vigencia de la garantía no cubre el periodo a garantizar.</value>
+  </data>
+  <data name="ErrorConfigurationWarranty" xml:space="preserve">
+    <value>Error en Acme de integridad de las garantias..Numero :{0}</value>
+  </data>
+  <data name="ErrorWarrantyEmpty" xml:space="preserve">
+    <value>No se ha enviado parametro de números de garantia por liberar Numero {0}</value>
+  </data>
+  <data name="ErrorWarrantyNotApplied" xml:space="preserve">
+    <value>La garantia  tiene Valores Aplicados pendientes  Numero {0}</value>
+  </data>
+  <data name="ErrorWarrantyNotExist" xml:space="preserve">
+    <value>Numero de garantia no Existe Numero {0}</value>
+  </data>
+  <data name="ErrorNotAgentWarranty" xml:space="preserve">
+    <value>El agente {0} no esta configurado para la garantia  número {1}</value>
+  </data>
+  <data name="DeleteFileBlobFailed" xml:space="preserve">
+    <value>No se logro eliminar el extracto @NumeroCuenta@, por favor vuelva a intentarlo.</value>
+  </data>
+  <data name="DeleteFileFTPFailed" xml:space="preserve">
+    <value>No se logró desplublicar el extracto @NumeroCuenta@, por favor vuelva a intentarlo.</value>
+  </data>
+  <data name="PublishFileCheckExistsPath" xml:space="preserve">
+    <value>Por favor valide que exista la ruta base para la publicación del archivo del agente {0}.</value>
+  </data>
+  <data name="ErrorPublicPortalFileXmFull" xml:space="preserve">
+    <value>No es posible publicar el archivo en el portal.</value>
+  </data>
+  <data name="PublicPortalFileXmFull" xml:space="preserve">
+    <value>Archivo publicado correctamente en el portal.</value>
+  </data>
+  <data name="AgentWithoutScheme" xml:space="preserve">
+    <value>El agente no tiene matriculado ningun Esquema para este periodo Agente :</value>
+  </data>
+  <data name="NotFrozenValue" xml:space="preserve">
+    <value>No hay valores congelados  ya aplicados que cumplan con las reglas de  este negativo</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>La fecha Inicial no puede ser mayor a la final</value>
+  </data>
+  <data name="ReadyConciliation" xml:space="preserve">
+    <value>Ya existe otra conciliacion con fechas {0}</value>
+  </data>
+  <data name="ValidateExistsSheetTitle" xml:space="preserve">
+    <value>Ya existe una configuración con titulo de hoja {0}.</value>
+  </data>
+  <data name="NotDeleteMediaMagnetic" xml:space="preserve">
+    <value>No se puede eliminar el registro de configuración de medios magnéticos.</value>
+  </data>
+  <data name="NotFormatted" xml:space="preserve">
+    <value>El formato de excel es incorrecto</value>
+  </data>
+  <data name="NoSaveWarranty" xml:space="preserve">
+    <value>Corrija las garantias con datos erróneos y quite las que alcanzo a grabar</value>
+  </data>
+  <data name="VerySelected" xml:space="preserve">
+    <value>Debe seleccionar una sola Garantia</value>
+  </data>
+  <data name="WarrantySucess" xml:space="preserve">
+    <value>Almacenado Desde Admongar</value>
+  </data>
+  <data name="NoExistUser" xml:space="preserve">
+    <value>Usuario no existe</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>Usuario no existe</value>
+  </data>
+  <data name="IncorrectPassword" xml:space="preserve">
+    <value>Contraseña incorrecta</value>
+  </data>
+  <data name="InactiveUser" xml:space="preserve">
+    <value>El usuario no esta activo</value>
+  </data>
+  <data name="ReadyUser" xml:space="preserve">
+    <value>Usuario ya existe con ese correo electrónico</value>
+  </data>
+  <data name="ReadyRol" xml:space="preserve">
+    <value>Rol ya esta creado</value>
+  </data>
+  <data name="RolNotFound" xml:space="preserve">
+    <value>Rol no existe</value>
+  </data>
+  <data name="DiferentPassword" xml:space="preserve">
+    <value>Contraseñas diferentes </value>
+  </data>
+  <data name="ValidationEmailBody" xml:space="preserve">
+    <value>acceso sistema PLANEADOR CENS :</value>
+  </data>
+  <data name="ValidationEmailSubject" xml:space="preserve">
+    <value>Validación Usuario PLANEADOR CENS</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>softgicsas2023@gmail.com</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>smtp.gmail.com</value>
+  </data>
+  <data name="NoEmail" xml:space="preserve">
+    <value>No se pudo enviar el mail ... contacte al administrador del sistema</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>zehy lxdd mygb mbod</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>587</value>
+  </data>
+  <data name="AccesNotFound" xml:space="preserve">
+    <value>Permiso no existe</value>
+  </data>
+  <data name="NoExistOption" xml:space="preserve">
+    <value>El módulo no existe</value>
+  </data>
+  <data name="ReadyAcces" xml:space="preserve">
+    <value>Permiso ya existe</value>
+  </data>
+  <data name="ReadyOption" xml:space="preserve">
+    <value>El módulo ya existe</value>
+  </data>
+  <data name="RolUserNotFound" xml:space="preserve">
+    <value>El Usuario no tiene roles preestablecidos</value>
+  </data>
+  <data name="UserInactive" xml:space="preserve">
+    <value>El usuario no esta activo</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Has excedido el número de intentos</value>
+  </data>
+  <data name="PasswordEquals" xml:space="preserve">
+    <value>La nueva contraseña debe ser diferente</value>
+  </data>
+  <data name="RolAsigned" xml:space="preserve">
+    <value>El rol ya se encuentra asignado a usuarios</value>
+  </data>
+</root>

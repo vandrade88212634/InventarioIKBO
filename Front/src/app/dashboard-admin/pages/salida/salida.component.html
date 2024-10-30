@@ -1,0 +1,145 @@
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-sm-8 col-md-8 mb-3">
+                    <p class="title">Salidas</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row align-items-center">
+               
+                <div class="col-md-4 mb-3" >
+                    <button style="height: 55px; margin-top: -23px;" type="button"
+                        class="btn btn-outline-success text-btn" (click)="clickAddEdit('add',0)">+ Crear
+                        nueva Salida</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-md-4">
+        <div class="row align-items-center">
+               
+            <div class="col-md-4 mb-3" >
+                <button style="height: 55px; margin-top: -23px;" type="button"
+                    class="btn btn-outline-success text-btn" (click)="salir()">Salir</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+  
+<!--Add-->
+<ng-template #add>
+    <form [formGroup]="addEditForm" (ngSubmit)="addOreditTarea()" style="margin-top: -5%;">
+        <div class="row">
+            <div class="col-md-12 alnLeft">
+                <p class="title-modal"><mat-icon
+                        style="vertical-align: middle; margin-right: 5px;">person</mat-icon>{{textAddEdit}}</p>
+            </div>
+        </div>
+       
+      
+            <div class="row">
+
+                <mat-form-field >
+                    <mat-label>Fecha </mat-label>
+                    <input matInput [matDatepicker]="picker2" placeholder="dd/mm/aa" formControlName="fecha" >
+                    <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                    <mat-error *ngIf="addEditForm.get('fecha')?.hasError('required')">Campo
+                        requerido</mat-error>
+                </mat-form-field>
+
+        
+                <mat-form-field>
+                    <mat-label>Producto</mat-label>
+                    <mat-select formControlName="IdProducto" (selectionChange)="productosFechas($event.value)">
+                        <mat-option *ngFor="let productoI of this.Productos" [value]="productoI.idProducto">{{productoI.nombre }}</mat-option>
+                    </mat-select>
+                    
+                </mat-form-field>
+            
+            </div> 
+            <div class="row">
+                  
+                
+               
+                
+
+             
+            <div>
+            
+          
+                
+                <mat-form-field>
+                    <mat-label>Fecha Vencimiento</mat-label>
+                    <mat-select formControlName="IdProductoFecha">
+                        <mat-option *ngFor="let fechasVenI of FechasVen" [value]="fechasVenI.idProductoFecha">{{fechasVenI.fechaVence}}</mat-option>
+                    </mat-select>
+                    
+                </mat-form-field>
+            
+            </div> 
+            
+        </div>
+            <div class="row">
+                     
+                     <mat-form-field >
+                         <mat-label>Cantidad</mat-label>
+                         <input matInput placeholder="Cantidad" formControlName="Cantidad" >
+                         <mat-error *ngIf="addEditForm.get('Cantidad')?.hasError('required')">Campo requerido</mat-error>
+                        
+                     </mat-form-field>
+                    
+            </div> 
+          
+            <mat-divider></mat-divider>
+      
+           
+     
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <button mat-button style="color:#006633;" type="submit" [disabled]="!addEditForm.valid">Guardar</button>
+                <button mat-button color="warn" type="button" (click)="confirmClosemodal()">Cancelar</button>
+            </div>
+        </div>
+    </form>
+</ng-template>
+<!--/Add-->
+<!--AddBtn-->
+<ng-template #addBtn>
+    <p class="text-forgot">La salida ha sido creado con éxito</p>
+    <div class="modal-footer">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <button mat-button style="color:#006633;" (click)="confirmClosemodal()">Aceptar</button>
+        </div>
+    </div>
+</ng-template>
+<!--/AddBtn-->
+<!--Edit-->
+<!--Cancel-->
+<ng-template #cancel>
+    <p class="text-forgot">Si acepta, el registro no se creará ni guardará.</p>
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <button mat-button style="color:#006633;" (click)="confirmClosemodal()">Aceptar</button>
+            <button mat-button color="warn" (click)="confirmClosemodal()">Cancelar</button>
+        </div>
+    </div>
+</ng-template>
+<!--/Cancel-->
+<!--Ver-->
+<!--/ver-->
+<!--Block-->
+
+<!--/Block-->
+<!--UnBlock-->
+
+<!--/UnBlock-->
+<!--Acciones-->
+
